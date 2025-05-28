@@ -1,0 +1,41 @@
+Name T11SBC;
+Partno ;
+Revision;
+Date 05/08/2025;
+Designer Jim Loos;
+Company ;
+Location ;
+Assembly ;
+Device G16V8A;
+
+
+/* Inputs:               */
+Pin 1  = Addr7; 	/* A15 */
+Pin 2  = Addr6; 	/* A14 */
+Pin 3  = Addr5; 	/* A13 */
+Pin 4  = Addr4; 	/* A12 */
+Pin 5  = Addr3; 	/* A11 */
+Pin 6  = Addr2; 	/* A10 */
+Pin 7  = Addr1; 	/* A9  */
+Pin 8  = Addr0; 	/* A8  */
+Pin 9  = CAS;
+
+FIELD ADDRESS = [Addr7..Addr0];
+
+/* Outputs:		          */
+Pin 19 = !ROMCS;
+Pin 18 = !RAMCS;
+Pin 17 = !ACIACS;
+Pin 16 = !VIACS;
+
+/*  just a reminder for me (Jim)... */
+/*  ! = NOT                         */
+/*  & = AND                         */
+/*  # = OR                          */
+/*  $ = XOR                         */
+
+/* Address decoding	*/
+RAMCS   = ADDRESS:[00..7F] & !CAS;  /* 0000-7FFF */
+ROMCS   = ADDRESS:[80..EF] & !CAS;  /* 8000-EFFF */
+ACIACS  = ADDRESS:[FE] & !CAS;      /* FE00-FEFF */
+VIACS   = ADDRESS:[FF] & !CAS;      /* FF00-FFFF */
