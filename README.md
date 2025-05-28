@@ -1,6 +1,8 @@
 # DEC T-11 Single Board Computer
 Assemble the firmware with the [Macro Assembler AS](http://john.ccac.rwth-aachen.de:8000/as/).
 
+<p align="center"><img src="/images/monitor.png"/>
+<p align="center">T-11 SBC Monitor</p><br>
 <p align="center"><img src="/images/T-11 SBC CPU.png"/>
 <p align="center">T-11 SBC CPU</p><br>
 <p align="center"><img src="/images/T-11 SBC GAL.png"/>
