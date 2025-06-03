@@ -1,5 +1,5 @@
 # DEC T-11 Single Board Computer
-Digital Equipment Corp. (DEC) T-11 Single Board Computer with RAM, EPROM, Serial and Parallel I/O.
+Digital Equipment Corp. (DEC) [T-11](https://en.wikipedia.org/wiki/DEC_T-11) Single Board Computer with RAM, EPROM, Serial and Parallel I/O.
 
 Assemble the [firmware](monitor.asm) with the [Macro Assembler AS](http://john.ccac.rwth-aachen.de:8000/as/). 
 
